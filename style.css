@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#home {
+    background-color: wheat;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 25px;
+    background-color: whitesmoke;
+}
+
+.logo a {
+    color: #b66921;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+a span {
+    color: #f1a550;
+}
+
+nav ul {
+    padding-top: 15px;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+}
+
+nav li a:hover::after {
+    width: 100%;
+    transition: all .5s;
+    background-color:#f1a550;
+}
+
+li a:hover {
+    color: brown;
+    transition: .5s ease-in-out;
+}
+
+box-icon {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 2px;
+}
+
+.slogan h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #b66921;
+}
+
+.slogan span {
+    color: black;
+
+}
+
+.slogan p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 7px 25px;
+    background-color:burlywood ;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.btn:hover {
+    color: whitesmoke;
+}
+
+/* main article 1 */
+main {
+    margin: auto;
+    max-width: 1200px;
+}
+
+main .judul {
+    padding-top: 30px;
+    color: #b66921;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.container2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    gap: 30px;
+}
+
+.story-image img {
+    border-radius: 12px;
+}
+
+.cerita {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* article 2 */
+.subjudul {
+    text-align: center;
+    color: green;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.container3 {
+    max-width: 1200px;
+    display: flex;
+    padding: 15px 20px;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 450px;
+    margin: 10px;
+    box-shadow: 0 7px 100px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.expresso img{
+    border-radius: 10px;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+.card:hover {
+    scale: 1.01;
+}
+
+.keterangan p{
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+.keterangan h1 {
+    font-size: 20px;
+    color: brown;
+}
+
+ .order {
+    background-color: burlywood;
+    padding: 7px 12px;
+    border-radius: 5px;
+    max-width: 350px;
+    margin: 15px auto;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.order a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+/* aside */
+.container4 {
+    max-width: 1200px;
+    padding: 15px 20px;
+    display: flex;
+    gap: 35px;
+}
+
+.biodata img {
+    margin: 0 auto;
+    max-width: 200px;
+    border-radius: 10px;
+    background-color: #DE8F5F;
+}
+
+.biodata h1 {
+    text-align: center;
+}
+
+section h2 {
+    color: #DE8F5F;
+}
+
+.container5 {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: wheat;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo img{
+    max-width: 140px;
+}
+
+.sosmed ul{
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding-left: 17px;
+}
+
+.dua a {
+    color: #b66921;
+}
+
+h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.cp {
+    text-align: center;
+    font-size: 13px;
+}
+
+.container,
+.container2,
+.container3,
+.container4 {
+    margin-bottom: 100px;
+}
+
+.article {
+    background-color: wheat;
+}
+
+/* media quary */
+@media ( max-width: 950px ) {
+    .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 100px 20px;
+        margin: auto;
+    }
+
+    .container .hero-image img{
+        width: 100%;
+    }
+
+    .slogan h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    /* rules main article 1*/
+    .container2 {
+        flex-direction: column;
+    }
+
+    .story-image img{
+        width: 100%;
+    }
+    .container3 {
+        flex-direction: column;
+    }
+
+    /* rules main article 2 */
+    .container3 .card {
+        margin: 10px auto;
+        width: 100%;
+        border: none;
+        box-shadow: 0 7px 100px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card .order {
+        width: 200px;
+        border: 3px solid wheat;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media ( max-width : 782px ) {
+    /* rule header */
+    nav  {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav box-icon {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+
+    a::after {
+        display: none;
+    }
+
+    nav ul {
+        background-color: whitesmoke;
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .showboxicon {
+        display: block;
+    }
+
+    .slogan h1 {
+        font-size: 35px;
+    }
+
+    .slogan p {
+        font-size: 17px;
+    }
+
+/* rule aside*/
+    aside .container4 {
+        flex-direction: column;
+        margin: auto;
+        gap: 10px;
+    }
+
+    aside .biodata {
+        margin: auto;
+        text-align: center;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    section p {
+        text-align: justify;
+    }
+    .none {
+        display: none;
+    }
+
+/* rules foother */
+    .container5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .dua  {
+        display: none;
+    }
+}
+
+@media ( max-width:406px ) {
+    .logo h1{
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
